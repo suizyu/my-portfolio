@@ -1,0 +1,15 @@
+.profile {
+    background-color: salmon;
+}
+
+.proflileText, .icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5%;
+}
+
+.icon > img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}

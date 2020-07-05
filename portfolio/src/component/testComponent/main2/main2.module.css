@@ -1,0 +1,21 @@
+.box1{
+    display: block;
+    height: 450px;
+}
+
+.box1 > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 100px;
+    margin: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0);
+    background: url(../../../img/1.jpg);
+    background-clip: text;
+}
+
+img{
+    width: 100%;
+}
