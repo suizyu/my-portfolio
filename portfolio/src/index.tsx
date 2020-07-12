@@ -7,27 +7,28 @@ import App from './component/testComponent/demo/App';
 import Profile from './component/profile/Profile';
 import ContentArea from './component/common/contentArea/ContentArea';
 import Scroll from './component/testComponent/scroll/Scroll';
-
-const Demo = () => {
-  return(
-    <div>
-      <div style={{ height: '1000px', backgroundColor: 'green'}}></div> 
-    </div>
-  );
-}
+import Slider from './component/works/worksSlider/WorksSlider';
+import FadeInTitle from './component/common/fadeInTitle/FadeInTitle';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-      <div style={{height:'500px', textAlign:"center"}} className="/top">
+      <div style={{height:'100px', textAlign:"center"}} className="/top">
+          <FadeInTitle>
+            Top
+          </FadeInTitle>
           <span>KagaRe's</span>
           <span>Portfolio</span>
       </div>
     <Scroll />
     <ContentArea>
+      <Slider />
       <Main2 />
+      <FadeInTitle>
+        About me!
+      </FadeInTitle>
       <Profile to="/about"/>
-      <Demo />
+      <Main2 />
     </ContentArea>
   </React.StrictMode>,
   document.getElementById('wrap')
