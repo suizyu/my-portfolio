@@ -1,11 +1,12 @@
 .menu{
-    background-color: rgba(31, 29, 29, 0.664);
-    text-align: center;
+    background-color: rgba(31, 29, 29, 0);
+    text-align: right;
     padding: 5px 0px;
     position: sticky;
     top: 0;
     left: 0;
-    z-index:5;
+    z-index: 10;
+    height: 8vh;
 }
 
 .btnMenu {
@@ -16,8 +17,8 @@
     text-decoration: none;
     border: 0;
     background-color: rgba(41, 36, 36, 0);
-    color: #67c5ff;  
-    margin: 5px;
+    color: #333333;  
+    margin: 10px;
   }
   
   .btnMenu:before {

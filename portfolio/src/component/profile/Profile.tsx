@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './profile.module.css';
 import avater from '../../img/icon.png';
-import Title from '../common/title/Title';
+import Title from '../common/fadeInTitle/FadeInTitle';
 import ScrollWrap from '../common/scrollWrap/ScrollWrap';
 
 const Icon = () => {

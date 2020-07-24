@@ -1,38 +1,66 @@
-import React, { useState, ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import { useSpring, animated } from 'react-spring';
+import { InView } from 'react-intersection-observer';
 
-interface titleText {
-  value: ReactNode
+interface ITitleProps {
+  children?: ReactNode
 };
 
-const Foo = (text: titleText) => {
-    const [isActive, setIsActive] = useState(true);
-    // useSpringでopacityのspringを定義
-    const { ...props} = useSpring({
-        velocity:100,
-        to: { opacity: isActive ? 1 : 0},
-        from: { opacity: 1}
-    });
-
-    return (
-      <animated.div style={{ ...props}} 
-        role="presentation"
-        onClick={() => setIsActive(isActive => !isActive)} >
-          <h1 className="title">
-            {text.value}
-          </h1>
-      </animated.div>
-    );
-  };
-  
-
-
-class FadeInTitle extends React.Component {
-    render() {
-        return(
-            <Foo value={this.props.children} />
-        );
-    }
+interface IShowState {
+  isShow: boolean
 }
 
-export default FadeInTitle;
+interface ITitleDetail {
+  value?: string
+}
+
+const FadeInTitle = (text: ITitleDetail) => {
+  const { ...props} = useSpring({
+      config: { duration: 350 },
+      to: { 
+          opacity: 1, 
+          height: 46,
+          innerHeigh: 46,
+          transform: "translate(0px, 0px)"
+        },
+      from: { opacity: 0, height: 0, innerHeight: 0, transform: "translate(0px, -20px)"}
+  });
+
+  return(
+    <animated.h1 style={{ ...props}}
+      className="title"
+      role="presentation">
+      {text.value}
+    </animated.h1>
+  );
+};
+
+class Title extends React.Component<ITitleProps, IShowState> {
+  private titleText: string | null = null;
+
+  constructor(props: ITitleProps) {
+    super(props);
+    this.state = {
+      isShow: false,
+    }
+    this.titleText = this.props.children?.toString() ?? "";
+  }
+
+  changeIsView = (inView: boolean) => {
+    if(!this.state.isShow && inView) {
+      this.setState({ isShow: true });
+    }
+  }
+
+  render() {
+    return(
+      <InView rootMargin={"-40%"}
+        threshold={1}
+        onChange={this.changeIsView}>
+        { this.state.isShow && (<FadeInTitle value={this.titleText ?? ""} />)}
+      </InView>
+    );
+  }
+}
+
+export default Title;
