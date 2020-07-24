@@ -83,9 +83,7 @@ class App extends React.Component {
     | null
     | undefined {
     return (
-      <div>
-        <canvas ref={this.onCanvasLoaded} />
-      </div>
+      <canvas ref={this.onCanvasLoaded} />
     );
   }
 }

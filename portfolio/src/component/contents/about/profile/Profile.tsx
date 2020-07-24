@@ -1,8 +1,8 @@
 import React from 'react';
 import style from './profile.module.css';
 import avater from '../../img/icon.png';
-import Title from '../common/fadeInTitle/FadeInTitle';
-import ScrollWrap from '../common/scrollWrap/ScrollWrap';
+import Title from '../../../common/fadeInTitle/FadeInTitle';
+import ScrollWrap from '../../../common/scrollWrap/ScrollWrap';
 
 const Icon = () => {
     return(
@@ -15,8 +15,8 @@ const Icon = () => {
 const ProfileText = () => {
     return(
         <div className={style.proflileText}>
-            <p>サンプルテキスト</p>
-            <p>サンプルテキスト</p>
+            <p>1995年4月生まれ。</p>
+            <p>2018年4月より、プログラマーとして就職。</p>
             <p></p>
         </div>
     );

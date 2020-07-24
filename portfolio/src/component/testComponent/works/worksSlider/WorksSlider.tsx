@@ -1,6 +1,6 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import { useSpring, animated, useChain, config } from 'react-spring';
+import { useSpring, animated, config } from 'react-spring';
 
 const Container = styled(animated.div)`
   position: relative;
