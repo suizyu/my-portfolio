@@ -1,10 +1,14 @@
 import React from 'react';
-import { WebGLRenderer, Scene, PerspectiveCamera, Color } from 'three';
+import { WebGLRenderer, Scene, PerspectiveCamera, Color, BoxGeometry, MeshBasicMaterial, Mesh} from 'three';
+import './app.module.css';
 
 class App extends React.Component {
   private scene: Scene | null = null;
   private camera: PerspectiveCamera | null = null;
   private renderer: WebGLRenderer | null = null;
+  private cube: BoxGeometry | null = null;
+  private material: MeshBasicMaterial | null = null;
+  private mesh: Mesh | null = null;
 
   constructor(props: any) {
     super(props);
@@ -21,13 +25,20 @@ class App extends React.Component {
     this.scene = new Scene();
     this.scene.background = new Color( 0xbfe3dd );
     this.camera = new PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 2000);
+    this.cube = new BoxGeometry(1,1,1);
+    this.material = new MeshBasicMaterial({ color: '#F5B232'});
+    this.mesh = new Mesh(this.cube, this.material);
+    this.scene.add(this.mesh);
+    this.camera.position.z = 4;
+
+
     this.animate();
   };
 
-  componentDidMount() {
+  componentDidMount = () => {
     window.addEventListener('resize', this.onResize, false);
   }
-  componentWillUnmount() {
+  componentWillUnmount = () => {
     window.removeEventListener('resize', this.onResize, false);
   }
 
@@ -46,10 +57,18 @@ class App extends React.Component {
     }
   }
 
-  animate() {
+  animate() { 
+    this.roteCube();
     window.requestAnimationFrame(this.animate);
     if (this.renderer && this.scene && this.camera) {
       this.renderer.render(this.scene, this.camera);
+    }
+  }
+
+  roteCube() {
+    if(this.mesh){
+      this.mesh.rotation.x += 0.005;
+      this.mesh.rotation.y += 0.01;
     }
   }
 
@@ -64,9 +83,7 @@ class App extends React.Component {
     | null
     | undefined {
     return (
-      <div>
-        <canvas ref={this.onCanvasLoaded} />
-      </div>
+      <canvas ref={this.onCanvasLoaded} />
     );
   }
 }

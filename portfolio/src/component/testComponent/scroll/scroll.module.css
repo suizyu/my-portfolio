@@ -1,0 +1,44 @@
+.menu{
+    background-color: rgba(31, 29, 29, 0);
+    text-align: right;
+    padding: 5px 0px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 8vh;
+}
+
+.btnMenu {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0;
+    text-decoration: none;
+    border: 0;
+    background-color: rgba(41, 36, 36, 0);
+    color: #333333;  
+    margin: 10px;
+  }
+  
+  .btnMenu:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px;
+    top:100%;
+    left: 0;
+    border-radius: 3px;
+    background:#67c5ff;
+    transition: .2s;
+  }
+  
+  .btnMenu:hover:before {
+    top: -webkit-calc(100% - 3px);
+    top: calc(100% - 3px);
+  }
+
+  .btnMenu:hover {
+    background-color: rgba(3, 3, 3, 0.253);
+    mix-blend-mode: multiply;
+  }
