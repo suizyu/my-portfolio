@@ -1,15 +1,15 @@
-.profile {
-    background-color: salmon;
-}
-
 .proflileText, .icon {
     display: inline-block;
-    vertical-align: middle;
+}
+
+.proflileText {
+    align-items: center;
+    font-size: 1.2rem;
 }
 
 .icon {
-    margin: 5%;
-    margin-top: 0;
+    margin: 0 5%;
+    vertical-align: middle;
 }
 
 .icon > img {
