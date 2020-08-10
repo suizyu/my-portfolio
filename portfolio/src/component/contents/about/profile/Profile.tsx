@@ -1,13 +1,17 @@
 import React from 'react';
 import style from './profile.module.css';
-import avater from '../../img/icon.png';
+import avater from '../../../../img/icon.png';
 import Title from '../../../common/fadeInTitle/FadeInTitle';
 import ScrollWrap from '../../../common/scrollWrap/ScrollWrap';
+
+interface PathProps {
+    to: string;
+}
 
 const Icon = () => {
     return(
         <div className={style.icon}> 
-            <img src={avater}/>
+            <img alt="プロフィール画像" src={avater}/>
         </div>
     );
 }
@@ -15,9 +19,11 @@ const Icon = () => {
 const ProfileText = () => {
     return(
         <div className={style.proflileText}>
-            <p>1995年4月生まれ。</p>
-            <p>2018年4月より、プログラマーとして就職。</p>
-            <p></p>
+            <p>
+                1995年生まれ。<br/>
+                2018年4月より、プログラマーとして就職。<br/>
+                操作性で失われる利用機会をなくしたいと思い、UI/UXデザイナーを志しております。
+            </p>
         </div>
     );
 }
@@ -29,10 +35,6 @@ const SelfIntroduction = () => {
             <ProfileText />
         </div>
     );
-}
-
-interface PathProps {
-    to: string;
 }
 
 class Profile extends React.Component<PathProps> {
