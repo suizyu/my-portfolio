@@ -1,0 +1,13 @@
+{
+    "category": "Program",
+    "details": [
+        {
+            "name": "C#",
+            "proficiency": 3
+        },
+        {
+            "name": "JavaScript",
+            "proficiency": 3
+        }
+    ]
+}
