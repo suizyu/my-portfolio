@@ -24,7 +24,12 @@ const FadeInTitle = (text: ITitleDetail) => {
           innerHeigh: 46,
           transform: "translate(0px, 0px)"
         },
-      from: { opacity: 0, height: 0, innerHeight: 0, transform: "translate(0px, -20px)"}
+      from: { 
+        opacity: 0, 
+        height: 0, 
+        innerHeight: 0, 
+        transform: "translate(0px, -20px)"
+      }
   });
 
   return(
@@ -60,7 +65,7 @@ class Title extends React.Component<ITitleProps, IShowState> {
   render() {
     return(
       <div className={style.resevedTitleSpace}>
-        <InView rootMargin={"0px 0px -40% 0px"}
+        <InView rootMargin={"0px 0px -30% 0px"}
           threshold={1}
           onChange={this.changeIsView}>
           { this.state.isShow && (<FadeInTitle value={this.titleText ?? ""} />)}
