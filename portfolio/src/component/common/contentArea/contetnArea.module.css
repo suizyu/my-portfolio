@@ -1,9 +1,9 @@
 .fullSizeContainer {
-    background-color: lightgrey;
+    background-color: #fff;
 }
 
 .contentsContainer {
     margin: 0 auto;
     width: 65vw;
-    background-color: lightgreen;
+    background-color: #fff;
 }
