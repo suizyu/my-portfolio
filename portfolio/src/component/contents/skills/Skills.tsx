@@ -1,23 +1,23 @@
 import React from 'react';
-import Title from '../../../common/fadeInTitle/FadeInTitle';
-import ScrollWrap from '../../../common/scrollWrap/ScrollWrap';
+import Title from '../../common/fadeInTitle/FadeInTitle';
+import ScrollWrap from '../../common/scrollWrap/ScrollWrap';
 import style from './skills.module.css';
 import webSkill from './skillsData/webSkills.json';
 import programmingSkills from './skillsData/programming.json';
 import othersSkills from './skillsData/others.json';
 
 interface PathProps {
-    to: string;
+    to: string
 }
 
 interface Details {
-    name: string,
+    name: string
     proficiency: number
 }
 
 interface DataSet {
-    category: string;
-    details: Details[];
+    category: string
+    details: Details[]
 }
 
 interface GenerateProps {
@@ -39,8 +39,8 @@ class Category extends React.Component<GenerateProps> {
             return;
         }
 
-        const detailRows = skillDetails.map((data) =>
-            <tr>
+        const detailRows = skillDetails.map((data, i) =>
+            <tr key={i}>
                 <td className={style.name}>{data.name}</td>
                 <td className={style.rank}>{this.Stars(data.proficiency)}</td>
             </tr>
