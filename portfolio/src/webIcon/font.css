@@ -28,9 +28,23 @@
 .icon-instagram:before {
   content: "\ea92";
 }
+.icon-instagram:hover {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  background-clip: text;
+  transition: 400ms;
+}
 .icon-twitter:before {
   content: "\ea96";
 }
+.icon-twitter:hover {
+  color: #1DA1F2;
+  transition: 400ms;
+}
 .icon-github:before {
   content: "\eab0";
+}
+.icon-github:hover {
+  color: #000;
+  transition: 400ms;
 }

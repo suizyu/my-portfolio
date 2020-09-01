@@ -4,6 +4,12 @@ import ScrollWrap from '../../common/scrollWrap/ScrollWrap';
 import '../../../webIcon/font.css';
 import style from '../contact/contact.module.css';
 
+const urls = {
+    twitter: "https://twitter.com/suizyu",
+    github: "https://github.com/suizyu",
+    instagram: "https://www.instagram.com/suizyu/?hl=ja"
+}
+
 interface PathProps {
     to: string;
 }
@@ -11,9 +17,15 @@ interface PathProps {
 const SnsLinks = () => {
     return (
         <div className={style.sns}>
-            <span className="icon-twitter"></span>
-            <span className="icon-github"></span>
-            <span className="icon-instagram"></span>
+            <a href={urls.twitter} target="_brank">
+                <span className="icon-twitter"></span>
+            </a>
+            <a href={urls.github} target="_brank">
+                <span className="icon-github"></span>
+            </a>
+            <a href={urls.instagram} target="_brank">
+                <span className="icon-instagram"></span>
+            </a>
         </div>
     );
 }
