@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wh2, TopImage, MainTextDiv } from '../../../../common/detailComponents/DetailComponents';
+import { Wh2, MainTextDiv } from '../../../../common/detailComponents/DetailComponents';
 
 const Template = () => {
     const title = "プロトタイピング：トリミングアプリ";
@@ -32,11 +32,10 @@ const Template = () => {
             </dl>
             <MainTextDiv>
                 <p>
-
                 </p>
             </MainTextDiv>
         </>
-    )
+    );
 }
 
 export default Template;
