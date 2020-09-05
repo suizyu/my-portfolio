@@ -1,18 +1,21 @@
 {
     "works":[
         {
+            "id": "portfolio",
             "img": "icon.png",
             "title": "ポートフォリオサイト",
             "modify": "2020/08"
         },
         {
+            "id": "trimming",
             "img": "7.jpg",
             "title": "プロトタイプ:トリミングアプリ",
             "modify": "2020/02"
         },
         {
+            "id": "signUp",
             "img": "6.jpg",
-            "title": "プロトタイプ：ログインフォーム",
+            "title": "プロトタイプ：サインアップフォーム",
             "modify": "2019/11"
         }
     ]

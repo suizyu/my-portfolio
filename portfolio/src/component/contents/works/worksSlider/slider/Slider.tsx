@@ -6,8 +6,18 @@ import { Scrollbars } from 'react-custom-scrollbars';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import worksData from '../../worksData.json';
+import SignUpFlow from '../../details/loginFlow/LoginFlow';
+import PortfolioWork from '../../details/portfolio/Portfolio';
+import TrimmingApp from '../../details/triming/TrimingApp';
+
+const detailContents = [ 
+  { key: "signUp" , detail: <SignUpFlow /> },
+  { key: "trimming" , detail: <TrimmingApp /> },
+  { key: "portfolio" , detail: <PortfolioWork /> },
+];
 
 interface thmbnailProps {
+  id: string,
   img: string,
   title: string,
   modify: string
@@ -21,6 +31,7 @@ const Thumbnail = (props: thmbnailProps) => {
       overflow: "hidden"
   }
   const workYearMonth = "【" + props.modify + "】";
+  const detail = detailContents.find(c => c.key == props.id)?.detail;
 
   return(
       <div>
@@ -38,7 +49,8 @@ const Thumbnail = (props: thmbnailProps) => {
               <Scrollbars>
                   <div className={style.closebtn} onClick={() => setIsOpen(false)}><span>×</span></div>
                   <div className={style.worksDetail}>
-                    <p>ぴー</p>
+                    <p>{ workYearMonth }</p>
+                      {detail}
                   </div>
               </Scrollbars>
               </div>
@@ -51,7 +63,7 @@ const Slider = () => {
   const works = worksData.works.map((work, i) =>{
     return(
       <div key={i}>
-        <Thumbnail img={work.img} title={work.title} modify={work.modify} />
+        <Thumbnail img={work.img} title={work.title} modify={work.modify} id={work.id}/>
       </div>
     );
   });
