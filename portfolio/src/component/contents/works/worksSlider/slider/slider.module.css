@@ -81,3 +81,8 @@ figcaption > p > span {
     line-height: 30px;
     color: #fff;
 }
+
+.worksDetail > dl > dd > ul, .worksDetail > dl > dd > p {
+    padding: 0;
+    line-height: 1.35rem;
+}

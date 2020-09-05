@@ -17,7 +17,7 @@ interface isOnDisplay {
 
 class ScrollLink extends React.Component<ScrollLinkProps> {
     render(){
-        const offset = this.props.offset == null ? -10 : window.innerHeight / this.props.offset;
+        const offset = this.props.offset == null ? -20 : this.props.offset;
         return(
             <Link activeClass="active" 
                 to={this.props.to} 
@@ -31,7 +31,7 @@ class ScrollLink extends React.Component<ScrollLinkProps> {
 
 const AnimateMenuItem = (props: isOnDisplay) => {
     const menuItems = [
-        <ScrollLink to="/">top</ScrollLink>,
+        <ScrollLink to="/" offset={0}>top</ScrollLink>,
         <ScrollLink to="/about">about</ScrollLink>,
         <ScrollLink to="/images">images</ScrollLink>,
         <ScrollLink to="/skills">skills</ScrollLink>,
@@ -74,7 +74,7 @@ class Footer extends React.Component {
     render(){
         return(
             <div className={style.footer}>
-                <span>@suizyu</span>
+                <span>© 2020 Tomomi Nemoto's Portfolio</span>
             </div>
         );
     }
