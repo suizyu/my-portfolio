@@ -2,19 +2,19 @@
     "works":[
         {
             "id": "portfolio",
-            "img": "icon.png",
+            "img": "portfolio_thumbnail.png",
             "title": "ポートフォリオサイト",
             "modify": "2020/08"
         },
         {
             "id": "trimming",
-            "img": "7.jpg",
+            "img": "trimming_thumbnail.png",
             "title": "プロトタイプ:トリミングアプリ",
             "modify": "2020/02"
         },
         {
             "id": "signUp",
-            "img": "6.jpg",
+            "img": "signUp_thumbnail.png",
             "title": "プロトタイプ：サインアップフォーム",
             "modify": "2019/11"
         }

@@ -20,7 +20,7 @@ const TopImage = (props: ImagesProps) => {
     const explanation = "イメージ画像:" + props.alt ?? "";
     return(
         <div className={style.imgConatiner}>
-            <img src={require('../../contents/works/details/images/'+ props.img)}
+            <img src={require('../../../img/'+ props.img)}
                 className={style.topImage}
                 alt={explanation} />
         </div>
