@@ -5,7 +5,7 @@ import '../../../webIcon/font.css';
 import style from '../contact/contact.module.css';
 
 const urls = {
-    twitter: "https://twitter.com/suizyu",
+    twitter: "https://twitter.com/suizyu620",
     github: "https://github.com/suizyu",
     instagram: "https://www.instagram.com/suizyu/?hl=ja"
 }
