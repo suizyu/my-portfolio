@@ -5,7 +5,10 @@ const Top = () => {
     return(
         <div className="/">
             <div className={style.top}>
-                <span>Tomomi Nemoto's <br/>Portfolio</span>
+                <div>
+                    Tomomi Nemoto's <br/>
+                    Portfolio
+                </div>
             </div>
         </div>
     );
