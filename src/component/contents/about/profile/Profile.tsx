@@ -24,6 +24,10 @@ const ProfileText = () => {
                 2018年4月より、プログラマーとして就職。<br/>
                 操作性で失われる利用機会をなくしたいと思い、UI/UXデザイナーを志しております。
             </p>
+            <p>
+                現在、業務ではパッケージソフトの新機能開発・改修や機能テストに従事。<br/>
+                使用言語・DB・FW：TypeScript, C#, SQL Server, PostgreSQL, AngularJS
+            </p>
         </div>
     );
 }
