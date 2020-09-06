@@ -22,12 +22,13 @@ const PortfolioWork = () => {
             <p>(左)サイトデザイン (右)メニュー配置案</p>
             <dl>
                 <dt><Wh2>Creation time</Wh2></dt>
-                <dd><p>2020/07 ~ 2020/09</p></dd>
+                <dd><p>2020/06 ~ 2020/09</p></dd>
                 <dt><Wh2>Time breakdown</Wh2></dt>
                 <dd>
                     <p>
                         サイトデザイン：3時間<br/>
-                        作成：約2ヶ月
+                        テストコンポーネント実装：1ヶ月 <br/>
+                        作成：2ヶ月
                     </p>
                 </dd>
                 <dt><Wh2>Technology and Tools</Wh2></dt>
@@ -42,11 +43,11 @@ const PortfolioWork = () => {
             <MainTextDiv>
                 <p>
                     当サイトです。 
-                    現在業務で利用しているTypeScript、5~6月に自主勉強をおこなったReactの習作を兼ねた制作となります。<br/>
+                    現在業務で利用しているTypeScript、3~5月に自主勉強をおこなったReactの習作を兼ねた制作となります。<br/>
                     <a href="https://github.com/suizyu/my-portfolio" target="_blank">ソースはこちら（github）</a>
                 </p>
                 <p>
-                    当初の予定では、背景にThree.jsを使用、レスポンシヴ対応を目指しておりましたが制作期間の長引きのため断念。<br/>
+                    当初の予定では、背景にThree.jsを使用、レスポンシブ対応を目指しておりましたが制作期間の長引きのため断念。<br/>
                     今後の更新での対応を目指してゆきます。
                 </p>
                 <p>
