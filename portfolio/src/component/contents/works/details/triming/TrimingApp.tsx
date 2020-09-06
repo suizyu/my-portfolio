@@ -6,6 +6,12 @@ const TrimmingApp = () => {
     return(
         <>
             <h1>{title}</h1>
+            <iframe style={{border:"1px solid rgba(0, 0, 0, 0.1)"}}
+                width="350" 
+                height="700" 
+                src={"https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FbaPpS4zRLZWit6kl2V0Zrd%2F%25E9%25BB%2584%25E9%2587%2591%25E6%25AF%2594%25E3%2583%2588%25E3%2583%25AA%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25B0%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA-%25E5%2585%25AC%25E9%2596%258B%25E7%2594%25A8%3Fnode-id%3D128%253A9152%26scaling%3Dscale-down&chrome=DOCUMENTATION"} 
+                allowFullScreen>
+            </iframe>
             <dl>
                 <dt><Wh2>Creation time</Wh2></dt>
                 <dd><p>2020/02</p></dd>

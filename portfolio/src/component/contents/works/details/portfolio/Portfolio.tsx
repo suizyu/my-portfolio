@@ -1,11 +1,25 @@
 import React from 'react';
-import { Wh2, TopImage, MainTextDiv } from '../../../../common/detailComponents/DetailComponents';
+import { Wh2, MainTextDiv } from '../../../../common/detailComponents/DetailComponents';
+import portfolio_menu from '../../../../../img/portfolio_menu.png';
 
 const PortfolioWork = () => {
     const title = "ポートフォリオサイト";
     return(
         <>
             <h1>{title}</h1>
+            <iframe style={{border:" 1px solid rgba(0, 0, 0, 0.1)"}} 
+                width="45%" 
+                height="450" 
+                src={"https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FJNZFcxkjlIh9cD4aHqMaN8%2FUntitled%3Fnode-id%3D0%253A1&chrome=DOCUMENTATION"}
+                allowFullScreen>
+            </iframe>
+            <iframe style={{border:" 1px solid rgba(0, 0, 0, 0.1)"}} 
+                width="45%" 
+                height="450" 
+                src={"https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FjzSyl6IMISaBweBTGyHRTr%2F%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2588%25E3%2583%2587%25E3%2582%25B6%25E3%2582%25A4%25E3%2583%25B3-%25E5%2585%25AC%25E9%2596%258B%25E7%2594%25A8%3Fnode-id%3D3%253A2&chrome=DOCUMENTATION"}
+                allowFullScreen>
+            </iframe>
+            <p>(左)サイトデザイン (右)メニュー配置案</p>
             <dl>
                 <dt><Wh2>Creation time</Wh2></dt>
                 <dd><p>2020/07 ~ 2020/09</p></dd>

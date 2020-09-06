@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, FormEvent } from 'react';
 import Slick from 'react-slick';
 import style from './slider.module.css';
 import { Overlay } from 'react-portal-overlay';
@@ -6,7 +6,7 @@ import { Scrollbars } from 'react-custom-scrollbars';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import worksData from '../../worksData.json';
-import SignUpFlow from '../../details/loginFlow/LoginFlow';
+import SignUpFlow from '../../details/signUpFlow/SignUpFlow';
 import PortfolioWork from '../../details/portfolio/Portfolio';
 import TrimmingApp from '../../details/triming/TrimingApp';
 
@@ -33,6 +33,14 @@ const Thumbnail = (props: thmbnailProps) => {
   const workYearMonth = "【" + props.modify + "】";
   const detail = detailContents.find(c => c.key == props.id)?.detail;
 
+  function closeEvent(event: FormEvent , closing: boolean) {
+    event.stopPropagation();
+    console.log(closing);
+    if (closing) {
+      setIsOpen(false);
+    }
+  }
+
   return(
       <div>
           <figure className={style.thumbnail} onClick={() => setIsOpen(true)}>
@@ -44,15 +52,15 @@ const Thumbnail = (props: thmbnailProps) => {
               </p>
             </figcaption>
           </figure>
-          <Overlay style={modalBackgroundStyle} open={isOpen}>
-              <div className={style.modal}>
-              <Scrollbars>
-                  <div className={style.closebtn} onClick={() => setIsOpen(false)}><span>×</span></div>
-                  <div className={style.worksDetail}>
-                    <p>{ workYearMonth }</p>
-                      {detail}
-                  </div>
-              </Scrollbars>
+          <Overlay style={modalBackgroundStyle} open={isOpen} onClick={event => closeEvent(event, true)}>
+              <div className={style.modal} onClick={event => closeEvent(event, false)}>
+                <Scrollbars>
+                    <div className={style.closebtn} onClick={event => closeEvent(event, true)}><span>×</span></div>
+                    <div className={style.worksDetail}>
+                      <p>{ workYearMonth }</p>
+                        {detail}
+                    </div>
+                </Scrollbars>
               </div>
           </Overlay>
       </div>
@@ -80,7 +88,7 @@ const Slider = () => {
 
     return (
       <Slick {...settings}>
-        {works}    
+        {works}
       </Slick>
     );
 }

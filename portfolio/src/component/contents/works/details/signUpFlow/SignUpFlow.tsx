@@ -1,11 +1,17 @@
 import React from 'react';
-import { Wh2, TopImage, MainTextDiv } from '../../../../common/detailComponents/DetailComponents';
+import { Wh2, MainTextDiv } from '../../../../common/detailComponents/DetailComponents';
 
 const SignUpFlow = () => {
     const title = "プロトタイピング：サインアップフロー";
     return(
         <>
             <h1>{title}</h1>
+            <iframe style={{border:"1px solid rgba(0, 0, 0, 0.1)"}}
+                width="350" 
+                height="700" 
+                src={"https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fdvma6SBInItX80sfAoMUxr%2F%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%25B3%25E3%2582%25A2%25E3%2583%2583%25E3%2583%2597%25E3%2583%2595%25E3%2583%25AD%25E3%2583%25BC-%25E5%2585%25AC%25E9%2596%258B%25E7%2594%25A8%3Fnode-id%3D47%253A2%26scaling%3Dscale-down&chrome=DOCUMENTATION"}
+                allowFullScreen>
+            </iframe>
             <dl>
                 <dt><Wh2>Creation time</Wh2></dt>
                 <dd><p>2019/10 ~ 2019/12</p></dd>

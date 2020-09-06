@@ -53,3 +53,7 @@ a {
   cursor: pointer;
   cursor: hand;
 }
+
+iframe {
+  margin: 0 20px;
+}
