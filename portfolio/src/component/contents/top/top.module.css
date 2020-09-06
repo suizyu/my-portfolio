@@ -5,13 +5,14 @@
     justify-content:center;
 }
 
-.top > span {
+.top div {
     position: fixed;
     z-index: -1;
     font-size: 100px;
     margin: 20px;
     font-weight: bold;
     color: rgb(243, 240, 200);
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Caveat', cursive;
     letter-spacing: 15px;
+    text-align: center;
 }
