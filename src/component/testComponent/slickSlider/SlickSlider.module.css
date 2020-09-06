@@ -1,0 +1,27 @@
+:root {
+    /*modalSize*/
+    --modal-width: 60vw;
+    --modal-height: 80vh
+  }
+
+.modal {
+    background-color: #fff;
+    margin: 10vh auto;
+    width: var(--modal-width);
+    height: var(--modal-height);
+}
+
+.closebtn {
+    position: fixed;
+    right: 21vw;
+    margin: 15px 10px;
+    font-size: 2rem;
+}
+
+.closebtn, .thenail {
+    cursor: pointer;
+    cursor: hand;
+}
+.worksDetail {
+    padding: 50px 100px;
+}
