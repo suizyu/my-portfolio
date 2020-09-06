@@ -1,0 +1,88 @@
+:root {
+    /*modalSize*/
+    --modal-width: 60vw;
+    --modal-height: 80vh
+  }
+
+.modal {
+    background-color: #fff;
+    margin: 10vh auto;
+    width: var(--modal-width);
+    height: var(--modal-height);
+    border-radius: 20px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.closebtn {
+    position: fixed;
+    right: 21vw;
+    margin: 15px 10px;
+    font-size: 2rem;
+}
+
+.closebtn, .thenail {
+    cursor: pointer;
+    cursor: hand;
+}
+.worksDetail {
+    padding: 50px 100px;
+}
+
+.thumbnail {
+    height: 300px;
+    width: 270px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.thumbnail:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.thumbnail > img {
+    transition: 0.3s;
+}
+
+.thumbnail > img:hover {
+    transform: scale(1.25);
+    transition: 0.5s;
+}
+
+.thumbnail > img:focus {
+    transform: scale(1.25);
+    transition: 0.5s;
+}
+
+.thumbnail > figcaption {
+    position: absolute;
+    pointer-events: none;
+    margin: 10;
+    top: 0;
+    height: 320px;
+    width: 270px;
+    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(33,33,33,1) 0%, rgba(255,255,255,0) 53%, rgba(255,255,255,0) 100%);
+}
+
+figcaption > p {
+    position: relative;
+    top: 65%;
+    line-height: normal;
+    color: #fff;
+    margin: 16px;
+}
+
+figcaption > p > span {
+    line-height: 30px;
+    color: #fff;
+}
+
+.worksDetail > dl > dd > ul, .worksDetail > dl > dd > p {
+    padding: 0;
+    line-height: 1.35rem;
+}

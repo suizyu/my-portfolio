@@ -1,5 +1,9 @@
+.fullSizeContainer {
+    background-color: #fff;
+}
+
 .contentsContainer {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 65vw;
+    background-color: #fff;
 }

@@ -1,0 +1,22 @@
+{
+    "works":[
+        {
+            "id": "portfolio",
+            "img": "portfolio_thumbnail.png",
+            "title": "ポートフォリオサイト",
+            "modify": "2020/08"
+        },
+        {
+            "id": "trimming",
+            "img": "trimming_thumbnail.png",
+            "title": "プロトタイプ:トリミングアプリ",
+            "modify": "2020/02"
+        },
+        {
+            "id": "signUp",
+            "img": "signUp_thumbnail.png",
+            "title": "プロトタイプ：サインアップフォーム",
+            "modify": "2019/11"
+        }
+    ]
+}

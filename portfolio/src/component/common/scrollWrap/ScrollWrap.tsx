@@ -9,7 +9,9 @@ interface PathProps {
 class ScrollWrap extends React.Component<PathProps> {
     customWrap() {
         const CustomDiv = styled.div`
-            height: ${props => this.props.height}
+            height: ${props => this.props.height};
+            margin: 0;
+            padding: 0;
         `
         return(
             <CustomDiv className={this.props.to}>
@@ -19,10 +21,14 @@ class ScrollWrap extends React.Component<PathProps> {
     }
 
     defaultWrap() {
+        const DefaultWrapDiv = styled.div`
+            margin: 0;
+            padding: 25px 0;
+        `
         return (
-            <div className={this.props.to}>
+            <DefaultWrapDiv className={this.props.to}>
                 {this.props.children}
-            </div>
+            </DefaultWrapDiv>
         );
     }
 

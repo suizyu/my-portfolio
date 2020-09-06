@@ -1,0 +1,21 @@
+{
+    "category": "Graphic and others",
+    "details": [
+        {
+            "name": "PhotoShop",
+            "proficiency": 2
+        },
+        {
+            "name": "Illustrator",
+            "proficiency": 2
+        },
+        {
+            "name": "AfterEffects",
+            "proficiency": 2
+        },
+        {
+            "name": "Figma",
+            "proficiency": 4
+        }
+    ]
+}

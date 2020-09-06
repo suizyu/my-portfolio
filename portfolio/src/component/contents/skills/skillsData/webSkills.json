@@ -1,0 +1,21 @@
+{
+    "category": "Web",
+    "details": [
+        {
+            "name": "HTML",
+            "proficiency": 4
+        },
+        {
+            "name": "CSS",
+            "proficiency": 3
+        },
+        {
+            "name": "AngularJS",
+            "proficiency": 3
+        },
+        {
+            "name": "React",
+            "proficiency": 1
+        }
+    ]
+}

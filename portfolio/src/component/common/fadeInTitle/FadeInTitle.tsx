@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { InView } from 'react-intersection-observer';
+import style from './fadeInTitle.module.css';
 
 interface ITitleProps {
   children?: ReactNode
@@ -23,13 +24,18 @@ const FadeInTitle = (text: ITitleDetail) => {
           innerHeigh: 46,
           transform: "translate(0px, 0px)"
         },
-      from: { opacity: 0, height: 0, innerHeight: 0, transform: "translate(0px, -20px)"}
+      from: { 
+        opacity: 0, 
+        height: 0, 
+        innerHeight: 0, 
+        transform: "translate(0px, -20px)"
+      }
   });
 
   return(
     <animated.h1 style={{ ...props}}
-      className="title"
-      role="presentation">
+    className="title"
+    role="presentation">
       {text.value}
     </animated.h1>
   );
@@ -52,13 +58,19 @@ class Title extends React.Component<ITitleProps, IShowState> {
     }
   }
 
+  componentDidMount() {
+    this.changeIsView(this.state.isShow);
+  }
+
   render() {
     return(
-      <InView rootMargin={"-40%"}
-        threshold={1}
-        onChange={this.changeIsView}>
-        { this.state.isShow && (<FadeInTitle value={this.titleText ?? ""} />)}
-      </InView>
+      <div className={style.resevedTitleSpace}>
+        <InView rootMargin={"0px 0px -30% 0px"}
+          threshold={1}
+          onChange={this.changeIsView}>
+          { this.state.isShow && (<FadeInTitle value={this.titleText ?? ""} />)}
+        </InView>
+      </div>
     );
   }
 }
