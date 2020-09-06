@@ -33,7 +33,7 @@ const AnimateMenuItem = (props: isOnDisplay) => {
     const menuItems = [
         <ScrollLink to="/" offset={0}>top</ScrollLink>,
         <ScrollLink to="/about">about</ScrollLink>,
-        <ScrollLink to="/images">images</ScrollLink>,
+        <ScrollLink to="/works">works</ScrollLink>,
         <ScrollLink to="/skills">skills</ScrollLink>,
         <ScrollLink to="/contact">contact</ScrollLink>
     ];
