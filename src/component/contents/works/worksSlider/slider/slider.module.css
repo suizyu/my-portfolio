@@ -86,3 +86,34 @@ figcaption > p > span {
     padding: 0;
     line-height: 1.35rem;
 }
+
+.springRound {
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.springRound, .springRound::before {
+    background: rgba(148,187,233);
+    transition: 0.5s;
+}
+
+.springRound:hover {
+    opacity: 1;
+}
+
+.btnBox {
+    position: relative;
+}
+
+.closeIcon {
+    position: absolute;
+    top:8px;
+    left: 19px;
+    margin: 0;
+    font-weight: bolder;
+    pointer-events: none;
+}
