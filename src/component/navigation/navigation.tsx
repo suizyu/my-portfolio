@@ -8,9 +8,6 @@ interface ScrollLinkProps {
     offset?: number | null;
 }
 
-interface MenuProps {
-}
-
 interface isOnDisplay {
     isView: boolean;
 }
