@@ -79,7 +79,7 @@ const Thumbnail = (props: thmbnailProps) => {
   const workYearMonth = "【" + props.modify + "】";
   const detail = detailContents.find(c => c.key == props.id)?.detail;
 
-  function closeEvent(event: FormEvent , closing: boolean) {
+  function closeEvent(event: FormEvent, closing: boolean) {
     event.stopPropagation();
     if (closing) {
       setIsOpen(false);
