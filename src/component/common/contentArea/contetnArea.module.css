@@ -5,5 +5,11 @@
 .contentsContainer {
     margin: 0 auto;
     width: 65vw;
-    background-color: #fff;
+    background-color: transparent;
+}
+
+.mobileContainer {
+    margin: 0 auto;
+    width: 90vw;
+    background-color: transparent;
 }
