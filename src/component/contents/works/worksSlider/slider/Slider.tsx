@@ -28,7 +28,7 @@ const CloseBnt = () => {
   const [isHover, setIsHover] = useState(false);
   const  { ...props} = useSpring({
     to: { 
-      transform: isHover ? "scale(1)" : "scale(0.3)",
+      transform: isHover ? "scale(1)" : "scale(0.5)",
       opacity: isHover ? 1 : 0
     },
     from: { 
