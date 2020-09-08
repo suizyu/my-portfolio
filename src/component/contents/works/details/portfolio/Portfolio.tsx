@@ -1,6 +1,5 @@
 import React from 'react';
 import { Wh2, MainTextDiv } from '../../../../common/detailComponents/DetailComponents';
-import portfolio_menu from '../../../../../img/portfolio_menu.png';
 
 const PortfolioWork = () => {
     const title = "ポートフォリオサイト";
