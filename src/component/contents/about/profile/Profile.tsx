@@ -26,7 +26,7 @@ const ProfileText = () => {
             </p>
             <p>
                 現在、業務ではパッケージソフトの新機能開発・改修や機能テストに従事。<br/>
-                使用言語・DB・FW：TypeScript, C#, SQL Server, PostgreSQL, AngularJS
+                実務経験：TypeScript, C#, SQL Server, PostgreSQL, AngularJS
             </p>
         </div>
     );
