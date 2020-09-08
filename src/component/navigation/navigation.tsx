@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-scroll';
 import style from './navigation.module.css';
 import { useTrail, animated } from 'react-spring';
