@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-scroll';
 import style from './navigation.module.css';
 import { useTrail, animated } from 'react-spring';
@@ -6,9 +6,6 @@ import { useTrail, animated } from 'react-spring';
 interface ScrollLinkProps {
     to: string;
     offset?: number | null;
-}
-
-interface MenuProps {
 }
 
 interface isOnDisplay {

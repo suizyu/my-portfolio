@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wh2, TopImage, MainTextDiv } from '../../../../common/detailComponents/DetailComponents';
+import { Wh2, MainTextDiv } from '../../../../common/detailComponents/DetailComponents';
 
 const TrimmingApp = () => {
     const title = "プロトタイピング：トリミングアプリ";
@@ -42,7 +42,7 @@ const TrimmingApp = () => {
             <MainTextDiv>
                 <p>
                     お題：カメラ機能を使用したアプリ のもと作成した学校課題となります。<br/>
-                    制作物：トリミングアプリ、ターゲット；写真初心者～中級者、撮影・編集をスマホで完結かつ簡単に行いたい層を想定して作成致しました。<br/>
+                    制作物：トリミングアプリ、ターゲット：：写真初心者～中級者、撮影・編集をスマートフォンで完結かつ簡単に行いたい層を想定して作成致しました。<br/>
                     内容としては、ターゲット層が写真の撮影段階で意識しづらいと考えられる黄金比などを手軽に参考にできるトリミングアプリを目指しました。<br/>
                 </p>
                 <p>
