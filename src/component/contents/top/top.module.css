@@ -1,5 +1,5 @@
 .top {
-    height: 100vh; 
+    height: 90vh; 
     display:flex;
     align-items:center;
     justify-content:center;
@@ -15,4 +15,17 @@
     font-family: 'Caveat', cursive;
     letter-spacing: 15px;
     text-align: center;
+}
+
+svg {
+    position: fixed;
+    bottom: 15%;
+    z-index: -1;
+    animation: scrollguide 2s ease-in-out infinite;
+}
+
+@keyframes scrollguide {
+    0% { bottom:15%; }
+    50% { bottom:17%; }
+    100% { bottom:15%; }
 }
