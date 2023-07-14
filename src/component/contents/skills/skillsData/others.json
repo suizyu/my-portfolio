@@ -16,6 +16,10 @@
         {
             "name": "Figma",
             "proficiency": 4
+        },
+        {
+            "name": "Blender",
+            "proficiency": 2
         }
     ]
 }
