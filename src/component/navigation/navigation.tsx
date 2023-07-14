@@ -14,15 +14,15 @@ interface isOnDisplay {
 
 class ScrollLink extends React.Component<ScrollLinkProps> {
     render(){
-        const isLocalhost = window.location.hostname === 'localhost';
-        const packageJson = require('../../../package.json');
-        const prefix = isLocalhost ? "" : packageJson.homepage;
-        const toPath = prefix + this.props.to;
-        console.log(packageJson.homepage);
+        // const isLocalhost = window.location.hostname === 'localhost';
+        // const packageJson = require('../../../package.json');
+        // const prefix = isLocalhost ? "" : packageJson.homepage;
+        //const toPath = process.env.PUBLIC_URL + this.props.to;
+        //console.log(toPath);
         const offset = this.props.offset == null ? -20 : this.props.offset;
         return(
             <Link activeClass="active" 
-                to={toPath}
+                to={this.props.to}
                 smooth={true}
                 offset={offset * -1}>
                 {this.props.children}
